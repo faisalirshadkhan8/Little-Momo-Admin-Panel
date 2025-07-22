@@ -1,0 +1,155 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: rgb(2, 7, 126);
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.order-info {
+  background-color: #0b28cb;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.order-info p {
+  margin: 5px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.status-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #45a049;
+}
+
+.confirm-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.no-transitions {
+  color: #666;
+  font-style: italic;
+}
+
+/* Status badges inside modal */
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.pending {
+  background-color: #ffeeba;
+  color: #856404;
+}
+
+.preparing {
+  background-color: #b8daff;
+  color: #004085;
+}
+
+.out {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.delivered {
+  background-color: #c3e6cb;
+  color: #155724;
+}
+
+.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}

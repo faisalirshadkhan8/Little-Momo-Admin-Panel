@@ -1,0 +1,198 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4e2f12 0%, #fb9a0f 100%);
+  padding: 20px;
+}
+
+.dark-mode .login-container {
+  background: linear-gradient(135deg, #3a2410 0%, #c27a0c 100%);
+}
+
+.momo-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: #6b3f1a;
+  padding: 10px;
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #4e2f12, #fb9a0f);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.logo-text {
+  font-size: 18px;
+}
+
+.login-form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .login-form-container {
+  background-color: #16213e;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h1 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 10px 0;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .login-header h1 {
+  color: #e1e1e1;
+}
+
+.login-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .login-header p {
+  color: #a0aec0;
+}
+
+.error-message {
+  background-color: #ffeeee;
+  color: #e53935;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dark-mode .error-message {
+  background-color: rgba(229, 57, 53, 0.2);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .form-group label {
+  color: #e1e1e1;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .form-group input {
+  background-color: #1a1a2e;
+  border-color: #1e3a5f;
+  color: #e1e1e1;
+}
+
+.form-group input:focus {
+  border-color: #fb9a0f;
+  outline: none;
+}
+
+.login-button {
+  background: linear-gradient(to right, #4e2f12, #fb9a0f);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+.form-options .forgot-password {
+  color: #fb9a0f;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .login-footer {
+  color: #a0aec0;
+}
+
+.login-footer .signup-link {
+  color: #fb9a0f;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Add loading spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

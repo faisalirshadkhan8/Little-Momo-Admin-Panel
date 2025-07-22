@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #4e2f12;
+  --secondary-color: #fb9a0f;
+  --success-color: #2ecc71;
+  --warning-color: #fb9a0f;
+  --danger-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #4e2f12;
+  --text-color: #333;
+  --text-light: #666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #0f0f1a;
+  color: #e1e1e1;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Dark mode transitions */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
