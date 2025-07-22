@@ -113,19 +113,7 @@ npm install
 #### Environment Configuration
 Create a `.env` file in the `back-end` directory:
 ```env
-# MongoDB Configuration
-MONGO_URI=mongodb://localhost:27017/little_momo_admin
-# Or use MongoDB Atlas: mongodb+srv://username:password@cluster.mongodb.net/little_momo_admin
 
-# Server Configuration
-PORT=5000
-NODE_ENV=development
-
-# JWT Configuration
-JWT_SECRET=your_super_secure_jwt_secret_key_here
-
-# Firebase Configuration (if using Firebase Admin SDK)
-FIREBASE_PROJECT_ID=your_firebase_project_id
 ```
 
 #### Firebase Service Account Setup
@@ -269,15 +257,7 @@ Little-Momo-Admin-Panel/
 
 ### **Environment Variables**
 
-#### Backend (.env)
-```env
-MONGO_URI=mongodb://localhost:27017/little_momo_admin
-PORT=5000
-JWT_SECRET=your_jwt_secret
-NODE_ENV=development
-```
-
-#### Firebase Configuration
+## Firebase Configuration
 - Set up Firebase project with Firestore
 - Enable Authentication
 - Configure security rules
