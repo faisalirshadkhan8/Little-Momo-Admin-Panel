@@ -2,7 +2,7 @@
 
 A comprehensive restaurant management system built with **React.js** frontend and **Node.js** backend, specifically designed for Little Momo restaurant operations. Features real-time order management, menu administration, customer tracking, and delivery monitoring with Firebase integration.
 
-![Little Momo Logo](front-end/src/assets/Logo.webp)
+
 
 ## 🚀 Features
 
